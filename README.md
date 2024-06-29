@@ -1,4 +1,4 @@
-# Weather App with React, Tailwind CSS, and OpenWeatherMap API
+# Weather Forecasting Application with React, Tailwind CSS, and OpenWeatherMap API
 
 This project is a weather application built with **JavaScript**, **React**, **Tailwind CSS**, **luxon**, **react-icons**, and **react-toastify**. It fetches weather data from **OpenWeatherMap API**, providing:
 
