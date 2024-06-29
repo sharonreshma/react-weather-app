@@ -10,7 +10,6 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
   - Quick links for popular cities.
   - City search and current location-based search.
 
----
 
 ## Technologies Used:
 
@@ -21,7 +20,6 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
 - **react-icons**
 - **react-toastify**
 
----
 
 ## How to Run:
 
@@ -30,17 +28,14 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
 3. Start the development server: `npm start`
 4. Open your browser and navigate to `http://localhost:3000`
 
----
 
 ## API Key Setup:
 
 - Sign up for a free API key at [OpenWeatherMap](https://openweathermap.org/) and replace `API_KEY` in `weatherService.js` with your key.
 
----
 
 ## Credits:
 
 - Icons by [IconScout]: (https://iconscout.com/unicons)
 - Weather data provided by [OpenWeatherMap API](https://openweathermap.org/api)
 
----
