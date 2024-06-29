@@ -1,4 +1,4 @@
-**Weather Forecasting Application with React, Tailwind CSS, and OpenWeatherMap API**
+# Weather App with React, Tailwind CSS, and OpenWeatherMap API
 
 This project is a weather application built with **JavaScript**, **React**, **Tailwind CSS**, **luxon**, **react-icons**, and **react-toastify**. It fetches weather data from **OpenWeatherMap API**, providing:
 
@@ -12,7 +12,7 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
 
 ---
 
-### Technologies Used:
+## Technologies Used:
 
 - **JavaScript**
 - **React**
@@ -23,7 +23,7 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
 
 ---
 
-### How to Run:
+## How to Run:
 
 1. Clone the repository: `git clone <repository-url>`
 2. Install dependencies: `npm install`
@@ -32,15 +32,15 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
 
 ---
 
-### API Key Setup:
+## API Key Setup:
 
 - Sign up for a free API key at [OpenWeatherMap](https://openweathermap.org/) and replace `API_KEY` in `weatherService.js` with your key.
 
 ---
 
-### Credits:
+## Credits:
 
-- Icons by [react-iconscout](https://iconscout.com/unicons/free-line-icon-fonts/search)
+- Icons by [IconScout]: (https://iconscout.com/unicons)
 - Weather data provided by [OpenWeatherMap API](https://openweathermap.org/api)
 
 ---
