@@ -7,6 +7,8 @@ import TemperatureAndLocation from "./components/TemperatureAndLocation";
 import Forecast from "./components/Forecast";
 import { useEffect, useState } from "react";
 import getFormattedWeatherData from "./services/weatherService";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [query, setQuery] = useState({ q: "coimbatore" });
@@ -15,9 +17,16 @@ function App() {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      await getFormattedWeatherData({ ...query, units }).then((data) => {
+      try {
+        const data = await getFormattedWeatherData({ ...query, units });
         setWeather(data);
-      });
+        toast.success(
+          `Successfully fetched weather for ${data.name}, ${data.country}.`
+        );
+      } catch (error) {
+        console.error("Error fetching weather data:", error);
+        toast.error("Failed to fetch weather data. Please try again later.");
+      }
     };
     fetchWeather();
   }, [query, units]);
@@ -33,6 +42,7 @@ function App() {
 
   return (
     <div className={`mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br ${formatBackground()} h-fit shadow-xl shadow-gray-400`}>
+      <ToastContainer /> {/* ToastContainer for displaying toast notifications */}
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
       {weather && (

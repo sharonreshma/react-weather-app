@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { UilSearch, UilLocationPoint } from "@iconscout/react-unicons";
+import { toast } from "react-toastify";
 
 function Inputs({ setQuery, setUnits }) {
   const [city, setCity] = useState("");
@@ -13,6 +14,7 @@ function Inputs({ setQuery, setUnits }) {
     // Implement your location logic here
     // Example: Fetch user's current location and update query state
     navigator.geolocation.getCurrentPosition((position) => {
+      toast.success("Location fetched!");
       const { latitude, longitude } = position.coords;
       setQuery({ lat: latitude, lon: longitude });
     }, (error) => {
