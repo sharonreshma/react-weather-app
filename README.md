@@ -44,7 +44,3 @@ This project is a weather application built with **JavaScript**, **React**, **Ta
 - Weather data provided by [OpenWeatherMap API](https://openweathermap.org/api)
 
 ---
-
-### License:
-
-This project is licensed under the MIT License - see the LICENSE file for details.
